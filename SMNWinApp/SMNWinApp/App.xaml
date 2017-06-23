@@ -1,0 +1,13 @@
+﻿<Application x:Class="SMNWinApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SMNWinApp"
+             xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon"
+             StartupUri="MainWindow.xaml" 
+             Startup="OnAppStartup_UpdateThemeName">
+    <Application.Resources>
+        <Style TargetType="dxr:DXRibbonWindowTitlePanel">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+    </Application.Resources>
+</Application>

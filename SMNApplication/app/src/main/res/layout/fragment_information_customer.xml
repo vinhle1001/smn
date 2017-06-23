@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="@dimen/common_12_dp"
+            android:text="@string/cancel"
+            android:textColor="@drawable/request_text_color"
+            android:textSize="@dimen/h4"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:padding="@dimen/common_12_dp"
+            android:text="@string/done"
+            android:textColor="@drawable/request_text_color"
+            android:textSize="@dimen/h4"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/common_8_dp"
+        android:layout_marginRight="@dimen/common_8_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/common_16_dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_dashboard_bg"
+                android:columnCount="2"
+                android:padding="@dimen/common_8_dp">
+
+                <ImageView
+                    android:layout_columnSpan="1"
+                    android:layout_gravity="fill_horizontal|fill_vertical"
+                    android:layout_rowSpan="2"
+                    android:src="@drawable/ic_man" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_customer_lastname"
+                    android:layout_column="1"
+                    android:layout_gravity="fill_horizontal|fill_vertical">
+
+                    <EditText
+                        android:id="@+id/item_customer_lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_lastname"
+                        android:maxLines="1" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/item_layout_customer_firstname"
+                    android:layout_column="1"
+                    android:layout_gravity="fill_horizontal|fill_vertical">
+
+                    <EditText
+                        android:id="@+id/item_customer_firstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_firstname"
+                        android:maxLines="1" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_customer_fullname"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical">
+
+                    <EditText
+                        android:id="@+id/item_customer_fullname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_fullname"
+                        android:maxLines="1" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_customer_phone"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical">
+
+                    <EditText
+                        android:id="@+id/item_customer_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_phonenumber"
+                        android:inputType="number"
+                        android:maxEms="12"
+                        android:maxLines="1" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_customer_birthday"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical">
+
+                    <EditText
+                        android:id="@+id/item_customer_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_calendar"
+                        android:hint="@string/label_birthday"
+                        android:maxEms="12"
+                        android:maxLines="1" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <info.hoang8f.android.segmented.SegmentedGroup
+                    android:id="@+id/customer_gender"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical"
+                    android:layout_marginTop="@dimen/common_8_dp"
+                    android:orientation="horizontal"
+                    app:sc_border_width="2dp"
+                    app:sc_corner_radius="10dp"
+                    app:sc_tint_color="@color/colorPrimary">
+
+                    <RadioButton
+                        android:id="@+id/customer_gender_male"
+                        style="@style/RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/label_male" />
+
+                    <RadioButton
+                        android:id="@+id/customer_gender_female"
+                        style="@style/RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/label_female" />
+
+                </info.hoang8f.android.segmented.SegmentedGroup>
+            </GridLayout>
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_8_dp"
+                android:background="@drawable/item_dashboard_bg"
+                android:columnCount="2"
+                android:padding="@dimen/common_8_dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_customer_email"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical">
+
+                    <EditText
+                        android:id="@+id/item_customer_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_customer_facebook"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical">
+
+                    <EditText
+                        android:id="@+id/item_customer_facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_facebook"
+                        android:maxLines="1" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_customer_address"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical">
+
+                    <EditText
+                        android:id="@+id/item_customer_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_address"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <com.vinhle.searchablespinner.SearchableSpinner
+                    android:id="@+id/spinner_province"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical"
+                    android:maxLines="1"
+                    app:hintText="@string/label_province" />
+
+                <com.vinhle.searchablespinner.SearchableSpinner
+                    android:id="@+id/spinner_district"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical"
+                    app:hintText="@string/label_district" />
+
+                <com.vinhle.searchablespinner.SearchableSpinner
+                    android:id="@+id/spinner_ward"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical"
+                    app:hintText="@string/label_ward" />
+
+                <!--<TextView-->
+                <!--android:layout_gravity="fill_vertical"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="@string/label_ward" />-->
+
+                <!--&lt;!&ndash;<com.toptoche.searchablespinnerlibrary.SearchableSpinner&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_gravity="fill_vertical|fill_horizontal"&ndash;&gt;-->
+                <!--&lt;!&ndash;app:hintText="@string/label_ward" />&ndash;&gt;-->
+
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/common_8_dp"
+                android:layout_marginTop="@dimen/common_8_dp"
+                android:background="@drawable/item_dashboard_bg"
+                android:columnCount="2"
+                android:padding="@dimen/common_8_dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_customer_note"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical">
+
+                    <EditText
+                        android:id="@+id/item_customer_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_note" />
+                </android.support.design.widget.TextInputLayout>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

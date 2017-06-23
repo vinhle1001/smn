@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="@dimen/common_12_dp"
+            android:text="@string/cancel"
+            android:textColor="@drawable/request_text_color"
+            android:textSize="@dimen/h4"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:padding="@dimen/common_12_dp"
+            android:text="@string/done"
+            android:textColor="@drawable/request_text_color"
+            android:textSize="@dimen/h4"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/common_8_dp"
+        android:layout_marginRight="@dimen/common_8_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/common_16_dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_dashboard_bg"
+                android:columnCount="2"
+                android:padding="@dimen/common_8_dp">
+
+                <ImageView
+                    android:layout_columnSpan="1"
+                    android:layout_gravity="fill_horizontal|fill_vertical"
+                    android:layout_rowSpan="2"
+                    android:src="@drawable/ic_shirt" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_product_code"
+                    android:layout_column="1"
+                    android:layout_gravity="fill_horizontal|fill_vertical">
+
+                    <EditText
+                        android:id="@+id/item_product_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="@string/label_product_code"
+                        android:maxLines="1" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/item_barcode"
+                    android:layout_column="1"
+                    android:layout_gravity="fill_horizontal|fill_vertical"
+                    android:layout_marginTop="@dimen/common_8_dp" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_product_name"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical">
+
+                    <EditText
+                        android:id="@+id/item_product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_product_name"
+                        android:maxLines="1" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_product_size"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical">
+
+                    <EditText
+                        android:id="@+id/item_product_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_product_size"
+                        android:maxEms="12"
+                        android:maxLines="1" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <com.vinhle.searchablespinner.SearchableSpinner
+                    android:id="@+id/spinner_product_type"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical"
+                    app:hintText="@string/label_product_type" />
+            </GridLayout>
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_8_dp"
+                android:background="@drawable/item_dashboard_bg"
+                android:columnCount="2"
+                android:padding="@dimen/common_8_dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_product_price"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical">
+
+                    <EditText
+                        android:id="@+id/item_product_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_product_price"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_product_cost_import"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical">
+
+                    <EditText
+                        android:id="@+id/item_product_cost_import"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_product_cost_import"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_product_cost_order"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical">
+
+                    <EditText
+                        android:id="@+id/item_product_cost_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_product_cost_order"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_8_dp"
+                android:background="@drawable/item_dashboard_bg"
+                android:columnCount="2"
+                android:padding="@dimen/common_8_dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_product_description"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical">
+
+                    <EditText
+                        android:id="@+id/item_product_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_product_description" />
+                </android.support.design.widget.TextInputLayout>
+
+                <info.hoang8f.android.segmented.SegmentedGroup
+                    android:id="@+id/item_product_active"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal|fill_vertical"
+                    android:layout_marginTop="@dimen/common_8_dp"
+                    android:orientation="horizontal"
+                    app:sc_border_width="2dp"
+                    app:sc_corner_radius="10dp"
+                    app:sc_tint_color="@color/colorPrimary">
+
+                    <RadioButton
+                        android:id="@+id/active"
+                        style="@style/RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/active" />
+
+                    <RadioButton
+                        android:id="@+id/deactivate"
+                        style="@style/RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/deactivate" />
+
+                </info.hoang8f.android.segmented.SegmentedGroup>
+            </GridLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_agency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/common_8_dp"
+                android:layout_marginTop="@dimen/common_8_dp"
+                android:background="@drawable/item_dashboard_bg" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

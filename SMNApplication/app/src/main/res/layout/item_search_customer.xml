@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_dashboard_bg"
+    android:orientation="horizontal"
+    android:padding="@dimen/common_16_dp">
+
+    <ImageButton
+        android:id="@+id/item_edit_customer"
+        android:layout_width="@dimen/common_48_dp"
+        android:layout_height="@dimen/common_48_dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_man" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_customer_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginRight="@dimen/common_16_dp"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Sample"
+            android:textSize="@dimen/h3" />
+
+        <TextView
+            android:id="@+id/item_customer_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginRight="@dimen/common_16_dp"
+            android:gravity="center_vertical"
+            android:text="Sample"
+            android:textSize="@dimen/h6" />
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/item_create_bill"
+        android:layout_width="@dimen/common_40_dp"
+        android:layout_height="@dimen/common_40_dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/common_12_dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_edit" />
+
+    <ImageButton
+        android:id="@+id/item_show_invoices"
+        android:layout_width="@dimen/common_40_dp"
+        android:layout_height="@dimen/common_40_dp"
+        android:layout_gravity="center_vertical"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_bill" />
+
+</LinearLayout>

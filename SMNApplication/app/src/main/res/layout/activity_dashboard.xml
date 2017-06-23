@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="true"
+        app:theme="@style/AppTheme.AppBarOverlay" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/common_8_dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+
+            <Button
+                android:id="@+id/btn_customer"
+                android:layout_columnSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:background="@drawable/item_dashboard_bg"
+                android:drawablePadding="@dimen/common_20_dp"
+                android:drawableTop="@drawable/ic_man"
+                android:padding="@dimen/common_12_dp"
+                android:text="@string/management_customer"
+                android:textSize="@dimen/h4"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_supplier"
+                android:layout_columnSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:background="@drawable/item_dashboard_bg"
+                android:drawablePadding="@dimen/common_20_dp"
+                android:drawableTop="@drawable/ic_supplier"
+                android:padding="@dimen/common_12_dp"
+                android:text="@string/management_supplier"
+                android:textSize="@dimen/h4"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_shop"
+                android:layout_columnSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:background="@drawable/item_dashboard_bg"
+                android:drawablePadding="@dimen/common_20_dp"
+                android:drawableTop="@drawable/ic_shop"
+                android:padding="@dimen/common_12_dp"
+                android:text="@string/management_store"
+                android:textSize="@dimen/h4"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_product"
+                android:layout_columnSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:background="@drawable/item_dashboard_bg"
+                android:drawablePadding="@dimen/common_20_dp"
+                android:drawableTop="@drawable/ic_shirt"
+                android:padding="@dimen/common_12_dp"
+                android:text="@string/management_product"
+                android:textSize="@dimen/h4"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_bill"
+                android:layout_columnSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:background="@drawable/item_dashboard_bg"
+                android:drawablePadding="@dimen/common_20_dp"
+                android:drawableTop="@drawable/ic_bill"
+                android:padding="@dimen/common_12_dp"
+                android:text="@string/management_bill"
+                android:textSize="@dimen/h4"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_finance"
+                android:layout_columnSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:background="@drawable/item_dashboard_bg"
+                android:drawablePadding="@dimen/common_20_dp"
+                android:drawableTop="@drawable/ic_finance"
+                android:padding="@dimen/common_12_dp"
+                android:text="@string/management_finance"
+                android:textSize="@dimen/h4"
+                android:textStyle="bold" />
+        </GridLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

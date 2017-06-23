@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">SMN</string>
+    <string name="home_activity">Home</string>
+    <string name="dashboard_activity">Dashboard</string>
+    <string name="action_settings">Settings</string>
+    <string name="currency">VND</string>
+
+    <!-- Global settings -->
+    <string name="done">Done</string>
+    <string name="signature">\u00A9 2016 License of <b>SMN Production</b></string>
+    <string name="cancel">Cancel</string>
+    <string name="loading">Please wait a minute for loading data!</string>
+    <string name="update">Please wait a minute for updating data!</string>
+    <string name="label_hint_search">Input content search</string>
+    <string name="label_hint_range_date">Select range date</string>
+    <string name="content_search">Search</string>
+    <string name="content">Content:</string>
+    <string name="range">Range:</string>
+    <string name="active">Active</string>
+    <string name="deactivate">Deactivate</string>
+    <string name="remove">Remove</string>
+    <string name="version">Version</string>
+
+
+    <!--Error -->
+    <string name="error_wrong_email">Email is not found!</string>
+    <string name="error_wrong_password">Password is wrong!</string>
+    <string name="error_wrong_data_format">Wrong data format!</string>
+    <string name="error_wrong_data_response">Sorry, operation failed!</string>
+
+
+    <!-- Login label deactivate-->
+    <string name="title_box_login">Member Login</string>
+    <string name="hint_username">User name</string>
+    <string name="hint_password">Password</string>
+    <string name="login">Login</string>
+
+
+    <!-- Dashboard Activity -->
+    <string name="management_customer">Customer</string>
+    <string name="management_supplier">Supplier</string>
+    <string name="management_product">Product</string>
+    <string name="management_bill">Bill</string>
+    <string name="management_store">Store</string>
+    <string name="management_finance">Finance</string>
+
+
+    <!-- User label -->
+    <string name="label_id">ID</string>
+    <string name="label_firstname">First name</string>
+    <string name="label_lastname">Last name</string>
+    <string name="label_fullname">Full name</string>
+    <string name="label_birthday">Birthday (dd-MM-yyyy)</string>
+    <string name="label_phonenumber">Phone number</string>
+    <string name="label_email">Email</string>
+    <string name="label_facebook">Facebook</string>
+    <string name="label_address">Address</string>
+    <string name="label_province">Province</string>
+    <string name="label_district">District</string>
+    <string name="label_ward">Ward</string>
+    <string name="label_note">Note</string>
+    <string name="label_male">Male</string>
+    <string name="label_female">Female</string>
+
+    <!-- Supplier label -->
+    <string name="label_supplier_name">Supplier name</string>
+
+
+    <!-- Product label -->
+    <string name="label_product_code">Product Code</string>
+    <string name="label_product_name">Product Name</string>
+    <string name="label_product_price">Product Price</string>
+    <string name="label_product_cost_import">Product Cost Import</string>
+    <string name="label_product_cost_order">Product Cost Order</string>
+    <string name="label_product_size">Product Size</string>
+    <string name="label_product_quantity">Product Quantity</string>
+    <string name="label_product_beginning_quantity">Product Beginning Quantity</string>
+    <string name="label_product_type">Product Type</string>
+    <string name="label_product_description">Product Description</string>
+
+
+    <!-- Bill label -->
+    <string name="label_tab_bill_date">Date</string>
+    <string name="label_tab_bill_text">Text</string>
+    <string name="label_bill_store">Store</string>
+    <string name="label_bill_product">Product</string>
+    <string name="label_bill_product_quantity">Quantity</string>
+    <string name="label_bill_price_unit">Price Unit</string>
+    <string name="label_bill_total_price">Total Price</string>
+    <string name="label_bill_code">Bill Code</string>
+    <string name="label_bill_customer">Customer</string>
+    <string name="label_bill_note">Bill Note</string>
+    <string name="label_bill_customer_phone">Customer Phone</string>
+    <string name="label_bill_add_product"><u>Add Product</u></string>
+    <string name="label_bill_step_propose">Propose</string>
+    <string name="label_bill_step_delivery">Delivery</string>
+    <string name="label_bill_step_received">Received</string>
+    <string name="label_bill_returned">Returned Product</string>
+    <string name="label_bill_returned_detail">Returned Detail</string>
+    <string name="label_bill_product_returned_quantity">Returned Quantity</string>
+    <string name="label_bill_product_refund_cost_unit">Refund Cost Unit</string>
+    <string name="label_bill_product_refund_cost">Refund Cost</string>
+
+
+    <!-- Import -->
+    <string name="label_import_product">Product</string>
+    <string name="label_import_store">Store</string>
+    <string name="label_import_product_quantity">Quantity</string>
+    <string name="label_import_cost_unit">Cost Unit</string>
+    <string name="label_import_cost">Cost</string>
+    <string name="label_import_code">Import Code</string>
+    <string name="label_import_supplier">Supplier</string>
+    <string name="label_import_note">Bill Note</string>
+    <string name="label_import_supplier_phone">Supplier Phone</string>
+    <string name="label_import_add_product"><u>Add Product</u></string>
+
+
+    <!-- Custom view -->
+    <string name="title_tab_start_date">START DATE</string>
+    <string name="title_tab_end_date">END DATE</string>
+
+
+    <!-- Mqtt -->
+    <string name="messageRecieved">Received message %1$s &lt;br/&gt; &lt;small&gt;Topic: %2$s &lt;/small&gt; </string>
+    <string name="timestamp">&lt;br/&gt; &lt;small&gt; %1$s &lt;/small&gt;</string>
+    <string name="notification">%1$s has received %2$s on topic %3$s</string>
+    <string name="toast_pub_success">Published message: %1$s to topic: %2$s</string>
+    <string name="toast_sub_success">Subscribed to %1$s</string>
+    <string name="toast_disconnected">Disconnected</string>
+    <string name="toast_pub_failed">Failed to publish message: %1$s to topic: %2$s</string>
+    <string name="toast_sub_failed">Failed to subscribe to %1$s</string>
+    <string name="connection_lost">%1$s has lost connection to %2$s</string>
+</resources>

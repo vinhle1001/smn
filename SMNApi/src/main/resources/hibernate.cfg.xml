@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!--<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.CharSet">utf8</property>
+        <property name="hibernate.connection.characterEncoding">utf8</property>
+        <property name="hibernate.connection.useUnicode">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/smn_portal?autoReconnect=true</property>
+        &lt;!&ndash;<property name="hibernate.connection.password"></property>&ndash;&gt;
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        &lt;!&ndash;<property name="hibernate.hbm2ddl.auto">create</property>&ndash;&gt;
+        <property name="hibernate.search.autoregister_listeners">false</property>
+        <property name="hibernate.use_sql_comments">true</property>
+        <property name="hibernate.id.new_generator_mappings">false</property>
+        <property name="hibernate.proc.param_null_passing">true</property>-->
+
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="hibernate.proc.param_null_passing">true</property>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.id.new_generator_mappings">false</property>
+        <property name="hibernate.connection.provider_class">
+            org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+        </property>
+        <property name="hibernate.hikari.maximumPoolSize">20</property>
+        <property name="hibernate.hikari.minimumIdle">5</property>
+        <property name="hibernate.hikari.dataSource.url">jdbc:mysql://localhost:3306/smn_portal</property>
+        <property name="hibernate.hikari.dataSource.user">root</property>
+        <!--<property name="hibernate.hikari.dataSource.password">thuAntAn2060</property>-->
+        <property name="hibernate.hikari.dataSource.characterEncoding">utf8</property>
+        <property name="hibernate.hikari.dataSource.useUnicode">true</property>
+        <property name="hibernate.hikari.dataSourceClassName">com.mysql.jdbc.jdbc2.optional.MysqlDataSource</property>
+        <property name="hibernate.hikari.dataSource.cachePrepStmts">true</property>
+        <property name="hibernate.hikari.dataSource.prepStmtCacheSize">250</property>
+        <property name="hibernate.hikari.dataSource.prepStmtCacheSqlLimit">2048</property>
+        <property name="hibernate.hikari.dataSource.useServerPrepStmts">true</property>
+
+
+        <mapping class="com.vinhle.smn.api.model.sql.SmnAccountEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnAccountTypeEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnAgencyEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnAgencyProductEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnBillEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnBillDetailEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnBillReturnedDetailEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnBillStepEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnBillTypeEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnCostTypeEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnCustomerEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnCustomerTypeEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnDistrictEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnGenderEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnImportEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnImportDetailEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnInternalTransferEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnInternalTransferDetailEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnLogEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnProductEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnProductTypeEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnProvinceEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnSettingEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnSupplierEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnTeleProviderEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.SmnWardEntity"/>
+
+        <!-- Mapping extend entity SmnImportDetailExtendFieldEntity -->
+        <mapping class="com.vinhle.smn.api.model.sql.custom.SmnProductExtendFieldEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.custom.SmnBillExtendFieldEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.custom.SmnCustomerExtendFieldEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.custom.SmnBillDetailExtendFieldEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.custom.SmnBillReturnedExtendFieldEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.custom.SmnSupplierExtendFieldEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.custom.SmnImportExtendFieldEntity"/>
+        <mapping class="com.vinhle.smn.api.model.sql.custom.SmnImportDetailExtendFieldEntity"/>
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
