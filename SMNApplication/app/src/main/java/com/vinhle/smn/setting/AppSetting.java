@@ -9,7 +9,7 @@ public class AppSetting {
     public static final int SUCCESS_CODE = 1;
     public static final int INVALID_CODE = -1;
 
-    public static final String BASE_URL = "http://192.168.0.104:11484/";
+    public static final String BASE_URL = "http://192.168.0.106:11484/";
     public static final String MQTT_BASE_HOST = "ec2-54-179-149-134.ap-southeast-1.compute.amazonaws.com";
     public static final int MQTT_BASE_PORT = 1883;
 
