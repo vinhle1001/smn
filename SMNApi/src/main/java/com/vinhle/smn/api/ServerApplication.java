@@ -37,7 +37,6 @@ public class ServerApplication {
         SpringApplication.run(ServerApplication.class, args);
     }
 
-
     /*----------------------------------- Config $Redis ---------------------------------------------*/
 
     @Value("${spring.redis.host}")

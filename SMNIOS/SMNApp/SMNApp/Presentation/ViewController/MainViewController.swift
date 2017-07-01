@@ -14,9 +14,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         //hide back button
-        self.navigationItem.hidesBackButton = true
-        
-        self.automaticallyAdjustsScrollViewInsets = false
+        self.navigationItem.hidesBackButton = true        
     }
 
     override func didReceiveMemoryWarning() {

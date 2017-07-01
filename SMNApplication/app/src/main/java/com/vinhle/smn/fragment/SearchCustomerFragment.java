@@ -155,7 +155,7 @@ public class SearchCustomerFragment extends BaseFragment {
         @Override
         public void onClick(View v) {
             if (onFragmentSelectionChanged != null)
-                onFragmentSelectionChanged.OnFragment(AppSetting.Fragment.CUSTOMER_INFORMATION, null);
+                onFragmentSelectionChanged.OnFragment(AppSetting.Fragment.CUSTOMER_INFORMATION, (Object) null);
         }
     };
 }

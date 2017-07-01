@@ -461,7 +461,7 @@ public class BillInformationFragment extends BaseFragment {
         @Override
         public void onClick(View v) {
             if (onFragmentSelectionChanged != null)
-                onFragmentSelectionChanged.OnFragment(AppSetting.Fragment.POP_BACK_STACK, null);
+                onFragmentSelectionChanged.OnFragment(AppSetting.Fragment.POP_BACK_STACK, (Object) null);
         }
     };
 

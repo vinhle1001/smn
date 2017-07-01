@@ -36,6 +36,7 @@ import com.vinhle.smn.common.StringHelper;
 import com.vinhle.smn.handler.OnAgencySelectionListener;
 import com.vinhle.smn.io.OkHttpHandler;
 import com.vinhle.smn.model.request.CompositedIdProductAgencyRequest;
+import com.vinhle.smn.model.request.ProductIdRequest;
 import com.vinhle.smn.model.request.ProductOfAgencyRequest;
 import com.vinhle.smn.model.request.ProductRequest;
 import com.vinhle.smn.model.response.AgencyResponse;
@@ -145,6 +146,9 @@ public class ProductInformationFragment extends BaseFragment {
                 if (mPGDWaiting.isShowing()) mPGDWaiting.dismiss();
             }
         });
+        ProductIdRequest request = new ProductIdRequest();
+        request.setProductId(productId);
+        request.setDeviceId(StringHelper.GetDeviceId(getContext()));
         handler.execute(UrlEntity.E_PRODUCT + UrlEntity.A_GET_PRODUCT_BY_ID, ProductResponse.class, productId);
     }
 

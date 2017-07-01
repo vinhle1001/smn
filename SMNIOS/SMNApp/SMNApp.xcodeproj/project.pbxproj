@@ -24,9 +24,14 @@
 		845171521F02120700DBCBD4 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845171501F02120700DBCBD4 /* LoginResponse.swift */; };
 		845171551F02121500DBCBD4 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845171531F02121500DBCBD4 /* Settings.swift */; };
 		845171561F02121500DBCBD4 /* UriCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845171541F02121500DBCBD4 /* UriCommon.swift */; };
+		8478398B1F074D3400E4C12C /* SearchCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478398A1F074D3400E4C12C /* SearchCustomerViewController.swift */; };
+		8478398D1F07637F00E4C12C /* CustomerSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478398C1F07637F00E4C12C /* CustomerSearchResponse.swift */; };
+		8478398F1F07652B00E4C12C /* CustomerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478398E1F07652B00E4C12C /* CustomerClient.swift */; };
 		84862E861F067F9C00345B6C /* LayoutableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84862E851F067F9C00345B6C /* LayoutableButton.swift */; };
 		84862E881F067FD500345B6C /* WaitingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84862E871F067FD500345B6C /* WaitingOverlay.swift */; };
 		84862E8A1F067FDD00345B6C /* SwiftValidatetorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84862E891F067FDD00345B6C /* SwiftValidatetorEx.swift */; };
+		8494F0ED1F07FC370023BF89 /* AlertEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494F0EC1F07FC370023BF89 /* AlertEx.swift */; };
+		8494F0EF1F0805C90023BF89 /* CustomerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494F0EE1F0805C90023BF89 /* CustomerTableViewCell.swift */; };
 		F2C6E5CAA36FAB841494A234 /* Pods_SMNApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE8F777DA7EB7EC6F77DF1A /* Pods_SMNApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,9 +81,14 @@
 		845171531F02121500DBCBD4 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = Util/Settings.swift; sourceTree = "<group>"; };
 		845171541F02121500DBCBD4 /* UriCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UriCommon.swift; path = Util/UriCommon.swift; sourceTree = "<group>"; };
 		845171571F0269CF00DBCBD4 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "Pods/../build/Debug-iphoneos/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
+		8478398A1F074D3400E4C12C /* SearchCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchCustomerViewController.swift; path = Presentation/ViewController/SearchCustomerViewController.swift; sourceTree = "<group>"; };
+		8478398C1F07637F00E4C12C /* CustomerSearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerSearchResponse.swift; sourceTree = "<group>"; };
+		8478398E1F07652B00E4C12C /* CustomerClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomerClient.swift; path = API/Client/CustomerClient.swift; sourceTree = "<group>"; };
 		84862E851F067F9C00345B6C /* LayoutableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutableButton.swift; path = Presentation/ViewEx/LayoutableButton.swift; sourceTree = "<group>"; };
 		84862E871F067FD500345B6C /* WaitingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaitingOverlay.swift; path = Presentation/UIView/WaitingOverlay.swift; sourceTree = "<group>"; };
 		84862E891F067FDD00345B6C /* SwiftValidatetorEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftValidatetorEx.swift; path = Presentation/UIView/SwiftValidatetorEx.swift; sourceTree = "<group>"; };
+		8494F0EC1F07FC370023BF89 /* AlertEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertEx.swift; path = Presentation/ViewEx/AlertEx.swift; sourceTree = "<group>"; };
+		8494F0EE1F0805C90023BF89 /* CustomerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomerTableViewCell.swift; path = Presentation/UIView/CustomerTableViewCell.swift; sourceTree = "<group>"; };
 		84C69EBB1EFE0CB800E398D5 /* FrameworkClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FrameworkClient.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/SMNApp-fouqrnfarkugbtayfobmjjoamipe/Build/Products/Debug-iphonesimulator/FrameworkClient/FrameworkClient.framework"; sourceTree = "<group>"; };
 		8B0D8FE230C85573824E02A9 /* Pods-SMNApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMNApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SMNApp/Pods-SMNApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8DCC6168B42A5046F8BE4BB2 /* Pods-SMNAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMNAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SMNAppUITests/Pods-SMNAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +204,7 @@
 			children = (
 				845171471F0211E600DBCBD4 /* LoginViewController.swift */,
 				845171481F0211E600DBCBD4 /* MainViewController.swift */,
+				8478398A1F074D3400E4C12C /* SearchCustomerViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -201,6 +212,7 @@
 		844F0F6F1EFD8E2800E0B00C /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				8494F0EE1F0805C90023BF89 /* CustomerTableViewCell.swift */,
 			);
 			name = UIView;
 			sourceTree = "<group>";
@@ -228,6 +240,7 @@
 			children = (
 				8451714B1F0211F400DBCBD4 /* BaseClient.swift */,
 				8451714C1F0211F400DBCBD4 /* UserClient.swift */,
+				8478398E1F07652B00E4C12C /* CustomerClient.swift */,
 			);
 			name = Client;
 			sourceTree = "<group>";
@@ -237,6 +250,7 @@
 			children = (
 				8451714F1F02120700DBCBD4 /* BaseResponse.swift */,
 				845171501F02120700DBCBD4 /* LoginResponse.swift */,
+				8478398C1F07637F00E4C12C /* CustomerSearchResponse.swift */,
 			);
 			name = Response;
 			sourceTree = "<group>";
@@ -254,6 +268,7 @@
 				84862E891F067FDD00345B6C /* SwiftValidatetorEx.swift */,
 				84862E871F067FD500345B6C /* WaitingOverlay.swift */,
 				84862E851F067F9C00345B6C /* LayoutableButton.swift */,
+				8494F0EC1F07FC370023BF89 /* AlertEx.swift */,
 			);
 			name = ViewEx;
 			sourceTree = "<group>";
@@ -566,16 +581,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8494F0EF1F0805C90023BF89 /* CustomerTableViewCell.swift in Sources */,
 				84862E881F067FD500345B6C /* WaitingOverlay.swift in Sources */,
 				8451714A1F0211E600DBCBD4 /* MainViewController.swift in Sources */,
 				84862E8A1F067FDD00345B6C /* SwiftValidatetorEx.swift in Sources */,
 				84862E861F067F9C00345B6C /* LayoutableButton.swift in Sources */,
 				845171521F02120700DBCBD4 /* LoginResponse.swift in Sources */,
 				845171551F02121500DBCBD4 /* Settings.swift in Sources */,
+				8478398D1F07637F00E4C12C /* CustomerSearchResponse.swift in Sources */,
 				8451714E1F0211F400DBCBD4 /* UserClient.swift in Sources */,
 				844F0F3E1EFD8D9000E0B00C /* AppDelegate.swift in Sources */,
+				8478398F1F07652B00E4C12C /* CustomerClient.swift in Sources */,
 				8451714D1F0211F400DBCBD4 /* BaseClient.swift in Sources */,
 				845171491F0211E600DBCBD4 /* LoginViewController.swift in Sources */,
+				8478398B1F074D3400E4C12C /* SearchCustomerViewController.swift in Sources */,
+				8494F0ED1F07FC370023BF89 /* AlertEx.swift in Sources */,
 				845171511F02120700DBCBD4 /* BaseResponse.swift in Sources */,
 				845171561F02121500DBCBD4 /* UriCommon.swift in Sources */,
 			);

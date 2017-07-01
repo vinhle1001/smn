@@ -12,3 +12,8 @@ public enum UserController: String{
     case Base = "account/"
     case Login = "check-login/"
 }
+
+public enum CustomerController: String{
+    case Base = "customer/"
+    case Search = "search-customer-v2/"
+}

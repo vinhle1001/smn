@@ -28,6 +28,7 @@ public class UrlEntity {
 
     public static final String A_SAVE_CUSTOMER = "/save-customer";
     public static final String A_SEARCH_CUSTOMER = "/search-customer";
+    public static final String A_SEARCH_CUSTOMER_V2 = "/search-customer-v2";
     public static final String A_FIND_ALL_CUSTOMER = "/find-all-customer";
     public static final String A_GET_CUSTOMER_BY_ID = "/get-customer-by-id";
 //    public static final String A_GET_INFO_BY_SESSION = "/get-info-by-session";
