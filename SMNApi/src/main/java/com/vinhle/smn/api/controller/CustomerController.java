@@ -7,9 +7,11 @@ import com.vinhle.smn.api.model.request.CustomerRequest;
 import com.vinhle.smn.api.model.request.TextRequest;
 import com.vinhle.smn.api.model.response.CustomerResponse;
 import com.vinhle.smn.api.model.response.CustomerSearchResponse;
+import com.vinhle.smn.api.model.response.CustomerSearchResponseV2;
 import com.vinhle.smn.api.model.response.UpdateCustomerResponse;
 import com.vinhle.smn.api.service.implservice.CustomerServiceImpl;
 import com.vinhle.smn.api.service.interfaceservice.LogService;
+import com.vinhle.smn.api.setting.AppSetting;
 import com.vinhle.smn.api.setting.LogSetting;
 import com.vinhle.smn.api.setting.UrlEntity;
 import com.vinhle.smn.api.springconfig.resolver.JsonBody;
@@ -43,6 +45,19 @@ public class CustomerController {
     List<CustomerSearchResponse> searchCustomer(@JsonBody TextRequest model) {
         long currentTime = System.currentTimeMillis();
         List<CustomerSearchResponse> response = customerService.getByText(UrlEntity.A_SEARCH_CUSTOMER, model.getText());
+
+        logService.save(LogSetting.LOG_TYPE_NORMAL, model.getSource(), UrlEntity.A_SEARCH_CUSTOMER, model.getDeviceId(), model, response, RelateDateTime.SubLongTime(currentTime, System.currentTimeMillis()));
+
+        return response;
+    }
+
+    @RequestMapping(value = UrlEntity.A_SEARCH_CUSTOMER_V2, method = RequestMethod.POST)
+    @ResponseBody
+    CustomerSearchResponseV2 searchCustomerV2(@JsonBody TextRequest model) {
+        long currentTime = System.currentTimeMillis();
+
+        List<CustomerSearchResponse> customers = customerService.getByText(UrlEntity.A_SEARCH_CUSTOMER, model.getText());
+        CustomerSearchResponseV2 response = new CustomerSearchResponseV2(AppSetting.SUCCESS_CODE, AppSetting.SUCCESS_MESSAGE, customers);
 
         logService.save(LogSetting.LOG_TYPE_NORMAL, model.getSource(), UrlEntity.A_SEARCH_CUSTOMER, model.getDeviceId(), model, response, RelateDateTime.SubLongTime(currentTime, System.currentTimeMillis()));
 

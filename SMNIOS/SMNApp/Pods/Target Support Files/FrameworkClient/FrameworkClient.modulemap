@@ -1,0 +1,6 @@
+framework module FrameworkClient {
+  umbrella header "FrameworkClient-umbrella.h"
+
+  export *
+  module * { export * }
+}
