@@ -10,10 +10,10 @@ import Foundation
 import ObjectMapper
 
 public class LoginResponse: BaseResponse {
-    public var accountId:Int?
-    public var accountEmail:String?
-    public var accountFullName:String?
-    public var accountSession:String?
+    public var accountId:Int!
+    public var accountEmail:String!
+    public var accountFullName:String!
+    public var accountSession:String!
     
     public required init?(map: Map) {
         super.init(map: map)

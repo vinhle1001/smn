@@ -17,3 +17,14 @@ public enum CustomerController: String{
     case Base = "customer/"
     case Search = "search-customer-v2/"
 }
+
+public enum ResourceController:String{
+    case Base = "resource/"
+    case Province = "get-all-province-v2/"
+    case District = "get-all-district-v2/"
+    case DistrictByProvinceId = "get-district-by-province-id/"
+    case Ward = "get-all-ward-v2/"
+    case WardByDistrictId = "get-ward-by-district-id/"
+    case Agency = "get-all-agency-v2/"
+    case ProductType = "get-all-product-type-v2/"
+}

@@ -13,6 +13,8 @@ class CustomerTableViewCell: UITableViewCell {
     @IBOutlet weak var imageViewCustomer: UIImageView!
     @IBOutlet weak var labelCustomerName: UILabel!
     @IBOutlet weak var labelCustomerPhone: UILabel!
+    @IBOutlet weak var btnNewBill: UIButton!
+    @IBOutlet weak var btnBillHistory: UIButton!
     
     private var _item:CustomerSearchItem?
     
@@ -30,5 +32,10 @@ class CustomerTableViewCell: UITableViewCell {
         //Display
         labelCustomerName.text = item.fullName
         labelCustomerPhone.text = item.phoneNumber
+    }
+    
+    public func setRow(index: Int){
+        btnNewBill.tag = index
+        btnBillHistory.tag = index
     }
 }

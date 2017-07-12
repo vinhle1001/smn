@@ -22,12 +22,12 @@ class LoginViewController: UIViewController, ValidationDelegate {
     @IBOutlet weak var lbPaswordError: UILabel!
     @IBOutlet weak var lbUserError: UILabel!
     
-    private var originViewHeight:CGFloat = 0.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        originViewHeight = self.view.bounds.size.height
+        //Disable back
+        navigationItem.hidesBackButton = true
         
         //Register validator
         _validator.registerField(tbxUsername, errorLabel: lbUserError, rules: [RequiredRule(message: "Hãy nhập email"), EmailRule(message: "Email chưa đúng")])
@@ -91,7 +91,7 @@ class LoginViewController: UIViewController, ValidationDelegate {
                     self.lbLoginError.isHidden = true;
 
                     //Show main screen
-                    let mainViewController = self.storyboard?.instantiateViewController(withIdentifier: "mainViewController") as! MainViewController
+                    let mainViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
                     self.navigationController?.pushViewController(mainViewController, animated: true)
                 }
             }

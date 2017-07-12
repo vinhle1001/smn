@@ -24,9 +24,9 @@ public class CustomerSearchResponse : BaseResponse{
 }
 
 public class CustomerSearchItem: Mappable{
-    public var customerId: Int = 0
-    public var fullName:String = ""
-    public var phoneNumber:String = ""
+    public var customerId: Int!
+    public var fullName:String!
+    public var phoneNumber:String!
     
     public required init?(map: Map) {
         

@@ -14,7 +14,7 @@
         <!--Đăng nhập-->
         <scene sceneID="IQQ-C6-txB">
             <objects>
-                <viewController id="4yx-qk-xfQ" customClass="LoginViewController" customModule="SMNApp" sceneMemberID="viewController">
+                <viewController restorationIdentifier="LoginViewController" storyboardIdentifier="LoginViewController" id="4yx-qk-xfQ" customClass="LoginViewController" customModule="SMNApp" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MlN-LK-2ve"/>
                         <viewControllerLayoutGuide type="bottom" id="MDr-wh-Lfp"/>
@@ -110,12 +110,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Đăng nhập" id="Z1S-cY-wwa"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="lbLoginError" destination="7un-id-27B" id="Ay5-Yv-Yto"/>
                         <outlet property="lbPaswordError" destination="JrZ-kP-215" id="1e6-5a-YYT"/>
                         <outlet property="lbUserError" destination="vEE-fp-8Ub" id="fJD-Ca-MMR"/>
                         <outlet property="tbxPassword" destination="Mzk-K1-wr0" id="kfr-J9-bmB"/>
                         <outlet property="tbxUsername" destination="0Qz-93-uz3" id="5FF-BW-JB9"/>
+                        <segue destination="BYZ-38-t0r" kind="show" id="wIc-Xd-dtC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHg-k7-6gb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -125,7 +127,7 @@
         <!--Chức năng-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="mainViewController" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="MainViewController" customModule="SMNApp" sceneMemberID="viewController">
+                <viewController restorationIdentifier="MainViewController" storyboardIdentifier="MainViewController" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="MainViewController" customModule="SMNApp" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -223,7 +225,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cot-vE-OPE" customClass="LayoutableButton" customModule="SMNApp">
-                                        <rect key="frame" x="39.5" y="37.5" width="128.5" height="170.5"/>
+                                        <rect key="frame" x="39.5" y="38" width="128.5" height="169.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="cot-vE-OPE" secondAttribute="height" multiplier="43:57" id="vba-zG-u3Z"/>
                                         </constraints>
@@ -267,9 +269,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chức năng" id="JrG-YN-cAn">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="V4M-lh-W5M"/>
                         <barButtonItem key="leftBarButtonItem" title="Đăng xuất" id="39R-9C-s0A"/>
                         <barButtonItem key="rightBarButtonItem" title="Cài đặt" id="Ch1-xF-OXn"/>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -305,46 +309,46 @@
                                                     </constraints>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82S-KX-PoG">
-                                                    <rect key="frame" x="299" y="9" width="30" height="30"/>
+                                                    <rect key="frame" x="289" y="6" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="82S-KX-PoG" secondAttribute="height" multiplier="1:1" id="qCe-2i-5OV"/>
                                                     </constraints>
                                                     <state key="normal" image="add_bill"/>
                                                     <connections>
-                                                        <segue destination="Oqm-jh-s1E" kind="show" id="hC2-Zk-qY6"/>
+                                                        <segue destination="Oqm-jh-s1E" kind="show" id="cfr-uX-shR"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqa-H2-vTG">
-                                                    <rect key="frame" x="337" y="9" width="30" height="30"/>
+                                                    <rect key="frame" x="332" y="6" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="eqa-H2-vTG" secondAttribute="height" multiplier="1:1" id="8sJ-B9-etP"/>
                                                     </constraints>
                                                     <state key="normal" image="wallet"/>
                                                     <connections>
-                                                        <segue destination="HGl-97-CSB" kind="show" id="2Qg-a9-Mo9"/>
+                                                        <segue destination="HGl-97-CSB" kind="show" id="UAv-NF-St8"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIF-SQ-KmP">
-                                                    <rect key="frame" x="56" y="6" width="235" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtQ-a1-fFK">
+                                                    <rect key="frame" x="56" y="26" width="225" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtQ-a1-fFK">
-                                                    <rect key="frame" x="56" y="26" width="235" height="15"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIF-SQ-KmP">
+                                                    <rect key="frame" x="56" y="6" width="225" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="eqa-H2-vTG" firstAttribute="centerY" secondItem="9XC-nP-sGg" secondAttribute="centerY" id="08s-O6-els"/>
+                                                <constraint firstItem="eqa-H2-vTG" firstAttribute="centerY" secondItem="9XC-nP-sGg" secondAttribute="centerY" constant="-1.25" id="08s-O6-els"/>
                                                 <constraint firstItem="xcE-q9-rLH" firstAttribute="centerY" secondItem="9XC-nP-sGg" secondAttribute="centerY" id="8iy-HG-fgp"/>
                                                 <constraint firstItem="82S-KX-PoG" firstAttribute="leading" secondItem="vIF-SQ-KmP" secondAttribute="trailing" constant="8" id="9xD-te-RyP"/>
-                                                <constraint firstItem="82S-KX-PoG" firstAttribute="top" secondItem="9XC-nP-sGg" secondAttribute="topMargin" constant="1" id="Bbh-Q9-Cjr"/>
+                                                <constraint firstItem="82S-KX-PoG" firstAttribute="top" secondItem="9XC-nP-sGg" secondAttribute="topMargin" constant="-2" id="Bbh-Q9-Cjr"/>
                                                 <constraint firstItem="TtQ-a1-fFK" firstAttribute="centerY" secondItem="9XC-nP-sGg" secondAttribute="centerY" constant="8.75" id="Bll-JX-PXq"/>
                                                 <constraint firstItem="TtQ-a1-fFK" firstAttribute="leading" secondItem="xcE-q9-rLH" secondAttribute="trailing" constant="8" id="Hnu-Qh-DQt"/>
-                                                <constraint firstItem="82S-KX-PoG" firstAttribute="centerY" secondItem="9XC-nP-sGg" secondAttribute="centerY" id="PX6-fO-1Qj"/>
+                                                <constraint firstItem="82S-KX-PoG" firstAttribute="centerY" secondItem="9XC-nP-sGg" secondAttribute="centerY" constant="-1.25" id="PX6-fO-1Qj"/>
                                                 <constraint firstItem="xcE-q9-rLH" firstAttribute="top" secondItem="9XC-nP-sGg" secondAttribute="topMargin" constant="-4" id="QV5-WM-9PK"/>
                                                 <constraint firstItem="eqa-H2-vTG" firstAttribute="leading" secondItem="82S-KX-PoG" secondAttribute="trailing" constant="8" id="UIs-8S-04V"/>
                                                 <constraint firstItem="vIF-SQ-KmP" firstAttribute="leading" secondItem="xcE-q9-rLH" secondAttribute="trailing" constant="8" id="icU-1U-HwU"/>
@@ -356,6 +360,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="btnBillHistory" destination="eqa-H2-vTG" id="5zC-Tb-7aX"/>
+                                            <outlet property="btnNewBill" destination="82S-KX-PoG" id="bHi-4b-ePw"/>
                                             <outlet property="imageViewCustomer" destination="xcE-q9-rLH" id="1N4-jd-jFa"/>
                                             <outlet property="labelCustomerName" destination="vIF-SQ-KmP" id="fXe-Ka-fcj"/>
                                             <outlet property="labelCustomerPhone" destination="TtQ-a1-fFK" id="F8u-TK-jBz"/>
@@ -385,6 +391,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Khách hàng" id="T1z-no-ZUk">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Dxi-g9-DxJ"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="XoY-vs-whC"/>
                     </navigationItem>
                     <connections>
@@ -399,7 +406,7 @@
         <!--Tạo hóa đơn-->
         <scene sceneID="9iK-e4-M1Q">
             <objects>
-                <viewController id="Oqm-jh-s1E" sceneMemberID="viewController">
+                <viewController restorationIdentifier="BillModifyViewController" storyboardIdentifier="BillModifyViewController" id="Oqm-jh-s1E" customClass="BillModifyViewController" customModule="SMNApp" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pXf-0K-1Tx"/>
                         <viewControllerLayoutGuide type="bottom" id="LB0-vA-s2Q"/>
@@ -409,16 +416,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Tạo hóa đơn" id="Ok3-5v-6jX"/>
+                    <navigationItem key="navigationItem" title="Tạo hóa đơn" id="Ok3-5v-6jX">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Ttf-sm-BdY"/>
+                        <barButtonItem key="rightBarButtonItem" title="Lưu" id="NMh-9p-tYw"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="lbTitle" destination="Ok3-5v-6jX" id="rCx-Mw-996"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mWH-IQ-Mba" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1377" y="1467"/>
+            <point key="canvasLocation" x="2277.5999999999999" y="1554.872563718141"/>
         </scene>
         <!--Danh sách hóa đơn-->
         <scene sceneID="bLM-EF-iMk">
             <objects>
-                <tableViewController id="HGl-97-CSB" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="ListBillViewController" storyboardIdentifier="ListBillViewController" id="HGl-97-CSB" customClass="ListBillViewController" customModule="SMNApp" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="D6n-Fj-JA1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -438,11 +452,19 @@
                             <outlet property="delegate" destination="HGl-97-CSB" id="MwF-M1-b6k"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Danh sách hóa đơn" id="Rc7-Cb-cok"/>
+                    <navigationItem key="navigationItem" title="Danh sách hóa đơn" id="Rc7-Cb-cok">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="6me-XH-0Rv"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lTb-h0-0ME">
+                            <connections>
+                                <segue destination="Oqm-jh-s1E" kind="show" id="1uN-MF-f36"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cpg-KU-VIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2260" y="1467"/>
+            <point key="canvasLocation" x="1377" y="1555"/>
         </scene>
         <!--Quản lý cửa hàng-->
         <scene sceneID="hdE-Ee-J2K">
@@ -457,7 +479,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Quản lý cửa hàng" id="7vv-ik-RPd"/>
+                    <navigationItem key="navigationItem" title="Quản lý cửa hàng" id="7vv-ik-RPd">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="g2T-mR-fNa"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MY8-Ja-rI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -476,7 +500,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Sản phẩm" id="QVT-0g-lT1"/>
+                    <navigationItem key="navigationItem" title="Sản phẩm" id="QVT-0g-lT1">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="gM1-C8-64g"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7x-h6-zJw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -495,7 +521,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Hóa đơn" id="fvn-eO-7p0"/>
+                    <navigationItem key="navigationItem" title="Hóa đơn" id="fvn-eO-7p0">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="orz-Lk-Rh8"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6v3-Vd-jB4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -514,7 +542,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Báo cáo" id="xzr-oi-Ng9"/>
+                    <navigationItem key="navigationItem" title="Báo cáo" id="xzr-oi-Ng9">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="3qn-MK-F79"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cT-xn-bql" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -533,7 +563,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Nhà cung cấp" id="Aaq-dF-4Y6"/>
+                    <navigationItem key="navigationItem" title="Nhà cung cấp" id="Aaq-dF-4Y6">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Llj-iP-rbr"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ti5-76-0Oi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -550,13 +582,46 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="4yx-qk-xfQ" kind="relationship" relationship="rootViewController" id="AQu-DK-xBh"/>
-                        <segue destination="BYZ-38-t0r" kind="show" id="4PG-YP-ng2"/>
+                        <segue destination="3PZ-7E-hDf" kind="relationship" relationship="rootViewController" id="nDd-cc-r55"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ph3-Q1-5gq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-559" y="-358"/>
+            <point key="canvasLocation" x="-1558" y="-358"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="X2K-FM-vhh">
+            <objects>
+                <viewController id="3PZ-7E-hDf" customClass="SplashViewController" customModule="SMNApp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l36-YF-Nv3"/>
+                        <viewControllerLayoutGuide type="bottom" id="gcB-wv-L7u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A75-6x-tMV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rdp-1h-xET">
+                                <rect key="frame" x="111" y="332.5" width="153" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rdp-1h-xET" firstAttribute="leading" secondItem="A75-6x-tMV" secondAttribute="leadingMargin" constant="95" id="JeM-uX-fE4"/>
+                            <constraint firstItem="rdp-1h-xET" firstAttribute="centerX" secondItem="A75-6x-tMV" secondAttribute="centerX" id="c1r-ct-sD4"/>
+                            <constraint firstItem="rdp-1h-xET" firstAttribute="centerY" secondItem="A75-6x-tMV" secondAttribute="centerY" id="u0U-Bt-hAf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cqo-jv-zsg"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="progressView" destination="rdp-1h-xET" id="DAY-d4-UBP"/>
+                        <segue destination="4yx-qk-xfQ" kind="show" id="L4L-4b-tRM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Fs-cf-BGK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-513" y="-358"/>
         </scene>
     </scenes>
     <resources>
@@ -569,4 +634,7 @@
         <image name="t-shirt" width="128" height="128"/>
         <image name="wallet" width="128" height="128"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="cfr-uX-shR"/>
+    </inferredMetricsTieBreakers>
 </document>

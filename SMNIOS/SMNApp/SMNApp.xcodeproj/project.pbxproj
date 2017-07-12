@@ -25,13 +25,31 @@
 		845171551F02121500DBCBD4 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845171531F02121500DBCBD4 /* Settings.swift */; };
 		845171561F02121500DBCBD4 /* UriCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845171541F02121500DBCBD4 /* UriCommon.swift */; };
 		8478398B1F074D3400E4C12C /* SearchCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478398A1F074D3400E4C12C /* SearchCustomerViewController.swift */; };
-		8478398D1F07637F00E4C12C /* CustomerSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478398C1F07637F00E4C12C /* CustomerSearchResponse.swift */; };
 		8478398F1F07652B00E4C12C /* CustomerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478398E1F07652B00E4C12C /* CustomerClient.swift */; };
 		84862E861F067F9C00345B6C /* LayoutableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84862E851F067F9C00345B6C /* LayoutableButton.swift */; };
 		84862E881F067FD500345B6C /* WaitingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84862E871F067FD500345B6C /* WaitingOverlay.swift */; };
 		84862E8A1F067FDD00345B6C /* SwiftValidatetorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84862E891F067FDD00345B6C /* SwiftValidatetorEx.swift */; };
 		8494F0ED1F07FC370023BF89 /* AlertEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494F0EC1F07FC370023BF89 /* AlertEx.swift */; };
 		8494F0EF1F0805C90023BF89 /* CustomerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494F0EE1F0805C90023BF89 /* CustomerTableViewCell.swift */; };
+		84994B5A1F106F7300C1850A /* ReadOnlyTextRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994B591F106F7300C1850A /* ReadOnlyTextRow.swift */; };
+		84994B5D1F106FBC00C1850A /* SearchablePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994B5C1F106FBC00C1850A /* SearchablePickerRow.swift */; };
+		84994B5F1F1081A500C1850A /* SearchablePickerInlineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994B5E1F1081A500C1850A /* SearchablePickerInlineRow.swift */; };
+		84994B611F1091D700C1850A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994B601F1091D700C1850A /* SplashViewController.swift */; };
+		84B788E71F10CF8A00CCE50F /* ResourceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B788E61F10CF8A00CCE50F /* ResourceClient.swift */; };
+		84B788E91F10D3A800CCE50F /* ProvinceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B788E81F10D3A800CCE50F /* ProvinceResponse.swift */; };
+		84B788F91F10D8AC00CCE50F /* ProductTypeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B788F81F10D8AC00CCE50F /* ProductTypeResponse.swift */; };
+		84B788FD1F10D8E900CCE50F /* AgencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B788FA1F10D8E900CCE50F /* AgencyResponse.swift */; };
+		84B788FE1F10D8E900CCE50F /* CustomerSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B788FB1F10D8E900CCE50F /* CustomerSearchResponse.swift */; };
+		84B788FF1F10D8E900CCE50F /* DistrictReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B788FC1F10D8E900CCE50F /* DistrictReponse.swift */; };
+		84B789011F10D96400CCE50F /* WardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B789001F10D96400CCE50F /* WardResponse.swift */; };
+		84B789031F10E27900CCE50F /* StaticVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B789021F10E27900CCE50F /* StaticVariables.swift */; };
+		84D2AFFB1F0E919C00D4D347 /* BillModifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D2AFFA1F0E919C00D4D347 /* BillModifyViewController.swift */; };
+		84D2AFFD1F0E942B00D4D347 /* BillResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D2AFFC1F0E942B00D4D347 /* BillResponse.swift */; };
+		84D2AFFF1F0E959300D4D347 /* ResourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D2AFFE1F0E959300D4D347 /* ResourceModel.swift */; };
+		84D2B0011F0E963900D4D347 /* BillDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D2B0001F0E963900D4D347 /* BillDetailResponse.swift */; };
+		84D2B0031F0E9DD600D4D347 /* ListBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D2B0021F0E9DD600D4D347 /* ListBillViewController.swift */; };
+		84D2B0051F0E9E9F00D4D347 /* BillSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D2B0041F0E9E9F00D4D347 /* BillSearchResponse.swift */; };
+		84D64D491F167335003A5DA5 /* ResponseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D64D481F167335003A5DA5 /* ResponseHelper.swift */; };
 		F2C6E5CAA36FAB841494A234 /* Pods_SMNApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE8F777DA7EB7EC6F77DF1A /* Pods_SMNApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,14 +100,32 @@
 		845171541F02121500DBCBD4 /* UriCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UriCommon.swift; path = Util/UriCommon.swift; sourceTree = "<group>"; };
 		845171571F0269CF00DBCBD4 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "Pods/../build/Debug-iphoneos/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
 		8478398A1F074D3400E4C12C /* SearchCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchCustomerViewController.swift; path = Presentation/ViewController/SearchCustomerViewController.swift; sourceTree = "<group>"; };
-		8478398C1F07637F00E4C12C /* CustomerSearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerSearchResponse.swift; sourceTree = "<group>"; };
 		8478398E1F07652B00E4C12C /* CustomerClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomerClient.swift; path = API/Client/CustomerClient.swift; sourceTree = "<group>"; };
 		84862E851F067F9C00345B6C /* LayoutableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutableButton.swift; path = Presentation/ViewEx/LayoutableButton.swift; sourceTree = "<group>"; };
 		84862E871F067FD500345B6C /* WaitingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaitingOverlay.swift; path = Presentation/UIView/WaitingOverlay.swift; sourceTree = "<group>"; };
 		84862E891F067FDD00345B6C /* SwiftValidatetorEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftValidatetorEx.swift; path = Presentation/UIView/SwiftValidatetorEx.swift; sourceTree = "<group>"; };
 		8494F0EC1F07FC370023BF89 /* AlertEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertEx.swift; path = Presentation/ViewEx/AlertEx.swift; sourceTree = "<group>"; };
 		8494F0EE1F0805C90023BF89 /* CustomerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomerTableViewCell.swift; path = Presentation/UIView/CustomerTableViewCell.swift; sourceTree = "<group>"; };
+		84994B591F106F7300C1850A /* ReadOnlyTextRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReadOnlyTextRow.swift; path = Presentation/UIView/Eureka/ReadOnlyTextRow.swift; sourceTree = "<group>"; };
+		84994B5C1F106FBC00C1850A /* SearchablePickerRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchablePickerRow.swift; path = Presentation/UIView/Eureka/SearchablePickerRow.swift; sourceTree = "<group>"; };
+		84994B5E1F1081A500C1850A /* SearchablePickerInlineRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchablePickerInlineRow.swift; path = Presentation/UIView/Eureka/SearchablePickerInlineRow.swift; sourceTree = "<group>"; };
+		84994B601F1091D700C1850A /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashViewController.swift; path = Presentation/ViewController/SplashViewController.swift; sourceTree = "<group>"; };
+		84B788E61F10CF8A00CCE50F /* ResourceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResourceClient.swift; path = API/Client/ResourceClient.swift; sourceTree = "<group>"; };
+		84B788E81F10D3A800CCE50F /* ProvinceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProvinceResponse.swift; path = API/Model/Response/ProvinceResponse.swift; sourceTree = "<group>"; };
+		84B788F81F10D8AC00CCE50F /* ProductTypeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductTypeResponse.swift; path = API/Model/Response/ProductTypeResponse.swift; sourceTree = "<group>"; };
+		84B788FA1F10D8E900CCE50F /* AgencyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgencyResponse.swift; path = API/Model/Response/AgencyResponse.swift; sourceTree = "<group>"; };
+		84B788FB1F10D8E900CCE50F /* CustomerSearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomerSearchResponse.swift; path = API/Model/Response/CustomerSearchResponse.swift; sourceTree = "<group>"; };
+		84B788FC1F10D8E900CCE50F /* DistrictReponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DistrictReponse.swift; path = API/Model/Response/DistrictReponse.swift; sourceTree = "<group>"; };
+		84B789001F10D96400CCE50F /* WardResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WardResponse.swift; path = API/Model/Response/WardResponse.swift; sourceTree = "<group>"; };
+		84B789021F10E27900CCE50F /* StaticVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StaticVariables.swift; path = Util/StaticVariables.swift; sourceTree = "<group>"; };
 		84C69EBB1EFE0CB800E398D5 /* FrameworkClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FrameworkClient.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/SMNApp-fouqrnfarkugbtayfobmjjoamipe/Build/Products/Debug-iphonesimulator/FrameworkClient/FrameworkClient.framework"; sourceTree = "<group>"; };
+		84D2AFFA1F0E919C00D4D347 /* BillModifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BillModifyViewController.swift; path = Presentation/ViewController/BillModifyViewController.swift; sourceTree = "<group>"; };
+		84D2AFFC1F0E942B00D4D347 /* BillResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BillResponse.swift; path = API/Model/Response/BillResponse.swift; sourceTree = "<group>"; };
+		84D2AFFE1F0E959300D4D347 /* ResourceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResourceModel.swift; path = API/Model/Shared/ResourceModel.swift; sourceTree = "<group>"; };
+		84D2B0001F0E963900D4D347 /* BillDetailResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BillDetailResponse.swift; path = API/Model/Response/BillDetailResponse.swift; sourceTree = "<group>"; };
+		84D2B0021F0E9DD600D4D347 /* ListBillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListBillViewController.swift; path = Presentation/ViewController/ListBillViewController.swift; sourceTree = "<group>"; };
+		84D2B0041F0E9E9F00D4D347 /* BillSearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BillSearchResponse.swift; path = API/Model/Response/BillSearchResponse.swift; sourceTree = "<group>"; };
+		84D64D481F167335003A5DA5 /* ResponseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseHelper.swift; path = API/ResponseHelper.swift; sourceTree = "<group>"; };
 		8B0D8FE230C85573824E02A9 /* Pods-SMNApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMNApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SMNApp/Pods-SMNApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8DCC6168B42A5046F8BE4BB2 /* Pods-SMNAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMNAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SMNAppUITests/Pods-SMNAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BFCE34E048CFFAE0C250853F /* Pods-SMNApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMNApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SMNApp/Pods-SMNApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +221,7 @@
 			children = (
 				844F0F721EFD8E7100E0B00C /* Client */,
 				844F0F711EFD8E6B00E0B00C /* Model */,
+				84D64D481F167335003A5DA5 /* ResponseHelper.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -205,6 +242,9 @@
 				845171471F0211E600DBCBD4 /* LoginViewController.swift */,
 				845171481F0211E600DBCBD4 /* MainViewController.swift */,
 				8478398A1F074D3400E4C12C /* SearchCustomerViewController.swift */,
+				84D2AFFA1F0E919C00D4D347 /* BillModifyViewController.swift */,
+				84D2B0021F0E9DD600D4D347 /* ListBillViewController.swift */,
+				84994B601F1091D700C1850A /* SplashViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -222,6 +262,7 @@
 			children = (
 				845171531F02121500DBCBD4 /* Settings.swift */,
 				845171541F02121500DBCBD4 /* UriCommon.swift */,
+				84B789021F10E27900CCE50F /* StaticVariables.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -241,6 +282,7 @@
 				8451714B1F0211F400DBCBD4 /* BaseClient.swift */,
 				8451714C1F0211F400DBCBD4 /* UserClient.swift */,
 				8478398E1F07652B00E4C12C /* CustomerClient.swift */,
+				84B788E61F10CF8A00CCE50F /* ResourceClient.swift */,
 			);
 			name = Client;
 			sourceTree = "<group>";
@@ -248,9 +290,17 @@
 		844F0F741EFD8ED700E0B00C /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				84B789001F10D96400CCE50F /* WardResponse.swift */,
+				84B788FA1F10D8E900CCE50F /* AgencyResponse.swift */,
+				84B788FB1F10D8E900CCE50F /* CustomerSearchResponse.swift */,
+				84B788FC1F10D8E900CCE50F /* DistrictReponse.swift */,
 				8451714F1F02120700DBCBD4 /* BaseResponse.swift */,
 				845171501F02120700DBCBD4 /* LoginResponse.swift */,
-				8478398C1F07637F00E4C12C /* CustomerSearchResponse.swift */,
+				84D2AFFC1F0E942B00D4D347 /* BillResponse.swift */,
+				84D2B0001F0E963900D4D347 /* BillDetailResponse.swift */,
+				84D2B0041F0E9E9F00D4D347 /* BillSearchResponse.swift */,
+				84B788E81F10D3A800CCE50F /* ProvinceResponse.swift */,
+				84B788F81F10D8AC00CCE50F /* ProductTypeResponse.swift */,
 			);
 			name = Response;
 			sourceTree = "<group>";
@@ -258,6 +308,7 @@
 		844F0F751EFD8EDE00E0B00C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				84D2AFFE1F0E959300D4D347 /* ResourceModel.swift */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -265,12 +316,23 @@
 		84862E841F067F8200345B6C /* ViewEx */ = {
 			isa = PBXGroup;
 			children = (
+				84994B5B1F106F7900C1850A /* Eureka */,
 				84862E891F067FDD00345B6C /* SwiftValidatetorEx.swift */,
 				84862E871F067FD500345B6C /* WaitingOverlay.swift */,
 				84862E851F067F9C00345B6C /* LayoutableButton.swift */,
 				8494F0EC1F07FC370023BF89 /* AlertEx.swift */,
 			);
 			name = ViewEx;
+			sourceTree = "<group>";
+		};
+		84994B5B1F106F7900C1850A /* Eureka */ = {
+			isa = PBXGroup;
+			children = (
+				84994B591F106F7300C1850A /* ReadOnlyTextRow.swift */,
+				84994B5C1F106FBC00C1850A /* SearchablePickerRow.swift */,
+				84994B5E1F1081A500C1850A /* SearchablePickerInlineRow.swift */,
+			);
+			name = Eureka;
 			sourceTree = "<group>";
 		};
 		CAA6B1B01E770B4A06E74B7C /* Pods */ = {
@@ -582,22 +644,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				8494F0EF1F0805C90023BF89 /* CustomerTableViewCell.swift in Sources */,
+				84B788FF1F10D8E900CCE50F /* DistrictReponse.swift in Sources */,
+				84D64D491F167335003A5DA5 /* ResponseHelper.swift in Sources */,
 				84862E881F067FD500345B6C /* WaitingOverlay.swift in Sources */,
 				8451714A1F0211E600DBCBD4 /* MainViewController.swift in Sources */,
+				84994B611F1091D700C1850A /* SplashViewController.swift in Sources */,
+				84994B5A1F106F7300C1850A /* ReadOnlyTextRow.swift in Sources */,
 				84862E8A1F067FDD00345B6C /* SwiftValidatetorEx.swift in Sources */,
+				84B788E71F10CF8A00CCE50F /* ResourceClient.swift in Sources */,
 				84862E861F067F9C00345B6C /* LayoutableButton.swift in Sources */,
+				84B788E91F10D3A800CCE50F /* ProvinceResponse.swift in Sources */,
 				845171521F02120700DBCBD4 /* LoginResponse.swift in Sources */,
 				845171551F02121500DBCBD4 /* Settings.swift in Sources */,
-				8478398D1F07637F00E4C12C /* CustomerSearchResponse.swift in Sources */,
+				84B788FD1F10D8E900CCE50F /* AgencyResponse.swift in Sources */,
+				84B788F91F10D8AC00CCE50F /* ProductTypeResponse.swift in Sources */,
+				84D2B0051F0E9E9F00D4D347 /* BillSearchResponse.swift in Sources */,
+				84B788FE1F10D8E900CCE50F /* CustomerSearchResponse.swift in Sources */,
+				84994B5F1F1081A500C1850A /* SearchablePickerInlineRow.swift in Sources */,
 				8451714E1F0211F400DBCBD4 /* UserClient.swift in Sources */,
+				84D2B0031F0E9DD600D4D347 /* ListBillViewController.swift in Sources */,
 				844F0F3E1EFD8D9000E0B00C /* AppDelegate.swift in Sources */,
+				84D2AFFD1F0E942B00D4D347 /* BillResponse.swift in Sources */,
 				8478398F1F07652B00E4C12C /* CustomerClient.swift in Sources */,
 				8451714D1F0211F400DBCBD4 /* BaseClient.swift in Sources */,
+				84B789031F10E27900CCE50F /* StaticVariables.swift in Sources */,
+				84994B5D1F106FBC00C1850A /* SearchablePickerRow.swift in Sources */,
 				845171491F0211E600DBCBD4 /* LoginViewController.swift in Sources */,
+				84D2AFFB1F0E919C00D4D347 /* BillModifyViewController.swift in Sources */,
+				84D2AFFF1F0E959300D4D347 /* ResourceModel.swift in Sources */,
 				8478398B1F074D3400E4C12C /* SearchCustomerViewController.swift in Sources */,
 				8494F0ED1F07FC370023BF89 /* AlertEx.swift in Sources */,
 				845171511F02120700DBCBD4 /* BaseResponse.swift in Sources */,
 				845171561F02121500DBCBD4 /* UriCommon.swift in Sources */,
+				84D2B0011F0E963900D4D347 /* BillDetailResponse.swift in Sources */,
+				84B789011F10D96400CCE50F /* WardResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

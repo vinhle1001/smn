@@ -32,6 +32,24 @@ class SearchCustomerViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let billModifyViewController = segue.destination as? BillModifyViewController, let sender = sender as? UIButton{
+            
+            let row = _dataSource[sender.tag]
+            
+            //Set params
+            billModifyViewController.customerId = row.customerId
+            billModifyViewController.mode = EditMode.Create
+            
+        }else if let listBillViewController = segue.destination as? ListBillViewController, let sender = sender as? UIButton{
+            
+            let row = _dataSource[sender.tag]
+            
+            //Set params
+            listBillViewController.customerId = row.customerId
+        }
+    }
 }
 
 //Table view
@@ -57,10 +75,41 @@ extension SearchCustomerViewController: UITableViewDelegate, UITableViewDataSour
         let customerCell = tableView.dequeueReusableCell(withIdentifier: "CustomerTableViewCell", for: indexPath) as! CustomerTableViewCell
         
         customerCell.setItem(item: _dataSource[indexPath.row])
+        customerCell.setRow(index: indexPath.row)
         
         return customerCell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Select row")
+    }
 
+//    func btnNewBillTouched(_ sender: UIButton) {
+//        let row = _dataSource[sender.tag]
+//        
+//        //Show create bill screen
+//        let createBillViewController = self.storyboard?.instantiateViewController(withIdentifier: "BillModifyViewController") as! BillModifyViewController
+//        
+//        //Set params
+//        createBillViewController.customerId = row.customerId
+//        createBillViewController.mode = EditMode.Create
+//        
+//        //Push screen
+//        self.navigationController?.pushViewController(createBillViewController, animated: true)
+//    }
+//    
+//    func btnBillHistoryTouched(_ sender: UIButton) {
+//        let row = _dataSource[sender.tag]
+//        
+//        //Show create bill screen
+//        let listBillViewController = self.storyboard?.instantiateViewController(withIdentifier: "ListBillViewController") as! ListBillViewController
+//        
+//        //Set params
+//        listBillViewController.customerId = row.customerId
+//        
+//        //Push screen
+//        self.navigationController?.pushViewController(listBillViewController, animated: true)
+//    }
 }
 
 //Search bar
