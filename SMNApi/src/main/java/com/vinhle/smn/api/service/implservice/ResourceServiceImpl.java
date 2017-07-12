@@ -149,4 +149,40 @@ public class ResourceServiceImpl extends BaseService implements ResourceService 
             return new ArrayList<>();
         }
     }
+
+    @Override
+    public List<DistrictResponse> getDistrictByProvinceId(Integer provinceId) {
+        try {
+            String key = StringHelper.ConcatWithSplit(RedisKeyEntity.SPLIT_CHAR, DEFAULT_E_URL, RedisKeyEntity.K_DISTRICT_BY_PROVINCE_ID, provinceId.toString());
+            List<DistrictResponse> result = (List<DistrictResponse>) getCache(key);
+            if (result == null) {
+                List<DistrictResponse> response = new ArrayList<>();
+                List<SmnDistrictEntity> districtEntities = (List<SmnDistrictEntity>) districtRepository.findByProvinceId(provinceId);
+                districtEntities.forEach(d -> response.add(new DistrictResponse(d.getDistrictId(), d.getName(), d.getType(), d.getProvinceId())));
+                result = response;
+                writeCache(key, result, RedisKeyEntity.CACHE_LONG_TIME_SECONDS);
+            }
+            return result;
+        } catch (Exception e) {
+            return new ArrayList<>();
+        }
+    }
+
+    @Override
+    public List<WardResponse> getWardByDistrictId(Integer districtId) {
+        try {
+            String key = StringHelper.ConcatWithSplit(RedisKeyEntity.SPLIT_CHAR, DEFAULT_E_URL, RedisKeyEntity.K_WARD_BY_DISTRICT_ID, districtId.toString());
+            List<WardResponse> result = (List<WardResponse>) getCache(key);
+            if (result == null) {
+                List<WardResponse> response = new ArrayList<>();
+                List<SmnWardEntity> wardEntities = (List<SmnWardEntity>) wardRepository.findByDistrictId(districtId);
+                wardEntities.forEach(w -> response.add(new WardResponse(w.getWardId(), w.getName(), w.getType(), w.getDistrictId())));
+                result = response;
+                writeCache(key, result, RedisKeyEntity.CACHE_LONG_TIME_SECONDS);
+            }
+            return result;
+        } catch (Exception e) {
+            return new ArrayList<>();
+        }
+    }
 }

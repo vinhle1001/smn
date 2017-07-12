@@ -16,4 +16,6 @@ public interface ResourceService {
     List<ProductTypeResponse> getAllProductType();
     List<BillStepResponse> getAllBillStep();
 
+    List<DistrictResponse> getDistrictByProvinceId(Integer provinceId);
+    List<WardResponse> getWardByDistrictId(Integer districtId);
 }

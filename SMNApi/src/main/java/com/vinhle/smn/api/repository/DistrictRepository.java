@@ -1,5 +1,6 @@
 package com.vinhle.smn.api.repository;
 
+import com.vinhle.server.framework.internal.sql.Argument;
 import com.vinhle.server.framework.internal.sql.SQLRepository;
 import com.vinhle.smn.api.model.sql.SmnDistrictEntity;
 import org.springframework.stereotype.Component;
@@ -49,4 +50,9 @@ public class DistrictRepository extends SQLRepository<SmnDistrictEntity, Integer
         // TODO: not implement
         return null;
     }
+
+    public Iterable<SmnDistrictEntity> findByProvinceId(Integer provinceId) throws Exception {
+        return ExecStoreProc(SmnDistrictEntity.class, "district_get_by_province_id", new Argument("_provinceId", provinceId, Integer.class));
+    }
+
 }

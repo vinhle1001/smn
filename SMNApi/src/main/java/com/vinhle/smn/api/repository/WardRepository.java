@@ -1,7 +1,7 @@
 package com.vinhle.smn.api.repository;
 
+import com.vinhle.server.framework.internal.sql.Argument;
 import com.vinhle.server.framework.internal.sql.SQLRepository;
-import com.vinhle.smn.api.model.sql.SmnProvinceEntity;
 import com.vinhle.smn.api.model.sql.SmnWardEntity;
 import org.springframework.stereotype.Component;
 
@@ -51,5 +51,7 @@ public class WardRepository extends SQLRepository<SmnWardEntity, Integer> {
         return null;
     }
 
-
+    public Iterable<SmnWardEntity> findByDistrictId(Integer districtId) throws Exception {
+        return ExecStoreProc(SmnWardEntity.class, "ward_get_by_district_id", new Argument("_districtId", districtId, Integer.class));
+    }
 }

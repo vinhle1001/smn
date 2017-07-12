@@ -68,5 +68,13 @@ public class UrlEntity {
     public static final String A_GET_ALL_PRODUCT_TYPE = "/get-all-product-type";
     public static final String A_GET_ALL_BILL_STEP = "/get-all-bill-step";
 
+    public static final String A_GET_ALL_AGENCY_V2 = "/get-all-agency-v2";
+    public static final String A_GET_ALL_PROVINCE_V2 = "/get-all-province-v2";
+    public static final String A_GET_ALL_DISTRICT_V2 = "/get-all-district-v2";
+    public static final String A_GET_ALL_WARD_V2 = "/get-all-ward-v2";
+    public static final String A_GET_ALL_PRODUCT_TYPE_V2 = "/get-all-product-type-v2";
+    public static final String A_GET_DISTRICT_BY_PROVINCE_ID = "/get-district-by-province-id";
+    public static final String A_GET_WARD_BY_DISTRICT_ID = "/get-ward-by-district-id";
+
 
 }

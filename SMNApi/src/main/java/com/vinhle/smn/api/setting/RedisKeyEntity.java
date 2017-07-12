@@ -38,5 +38,6 @@ public class RedisKeyEntity {
     public static final String K_PRODUCT_TYPE = "PRODUCT_TYPE";
     public static final String K_BILL_STEP = "BILL_STEP";
 
-
+    public static final String K_DISTRICT_BY_PROVINCE_ID = "DISTRICT_BY_PROVINCE_ID";
+    public static final String K_WARD_BY_DISTRICT_ID = "WARD_BY_DISTRICT_ID";
 }
