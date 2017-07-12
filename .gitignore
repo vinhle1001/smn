@@ -23,7 +23,7 @@
 **/target/
 
 # Idea
-**/.idea/
+**/.idea
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
@@ -97,3 +97,6 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 
+/SMNApi/.idea
+/SMNApplication/.idea
+/SMNWinApp/.vs
